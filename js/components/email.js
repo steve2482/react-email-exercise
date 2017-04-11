@@ -1,9 +1,10 @@
 import React from 'react';
 
-export default function Email() {
+export default function Email(props) {
   return (
     <div>
-      <h3>Email Subject</h3>
+      <h4>{props.subject}</h4>
+      <p>{props.from}</p>
     </div>
   );
 }
