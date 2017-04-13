@@ -14,7 +14,7 @@ export default function EmailList(props) {
       const email = props.emailData[mailbox][emailId];
       return (
         <li key={index}>
-          <Email id={email.id} subject={email.title} from={email.from} />
+          <Email mailboxRoute={mailbox} id={email.id} subject={email.title} from={email.from} />
         </li>
       );
     });
