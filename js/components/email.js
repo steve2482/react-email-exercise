@@ -11,5 +11,3 @@ export default function Email(props) {
     </div>
   );
 }
-
-// WORKING ON EMAIL CONTENTS!!!!!!!!

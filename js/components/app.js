@@ -1,7 +1,7 @@
 import React from 'react';
 
 import EMAILDATA from '../emails';
-import EmailWindow from './email-window';
+import SideBar from './sidebar';
 
 
 export default function App(props) {
@@ -9,7 +9,10 @@ export default function App(props) {
 		<div>
       <h1>Email App</h1>
       <div>
-        <EmailWindow mailbox={props.params.mailbox_name} emailData={EMAILDATA} />
+        <SideBar folders={EMAILDATA} />
+      </div>
+      <div>
+        {props.children}
       </div>
     </div>
   );
